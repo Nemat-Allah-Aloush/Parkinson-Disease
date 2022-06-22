@@ -2,8 +2,7 @@
 
 For now this repository contains data analysis for gait dataset[1] collected from Parkinspn's dissease patients.
 
-The dataset can be found by following the link:
-https://data.mendeley.com/datasets/7t658vpdhj/1/files/27c3a522-8baa-4ffd-8547-5f3b4ca240f6
+The dataset can be found by following the link, [here](https://data.mendeley.com/datasets/7t658vpdhj/1/files/27c3a522-8baa-4ffd-8547-5f3b4ca240f6).
 
 References:
 
