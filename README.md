@@ -3,6 +3,7 @@
 ## Index
 1. [Forward and Backward walking in PD ON_OFF Medication](#1.-forward-and-backward-walking-in-pd-on_off-medication)
 2. [Dataset description](#2.-Dataset-Description)
+3. [Statical Base Models](#3.-Statical-Base-Models)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -26,6 +27,21 @@ on level ground.
 
 2. Demographics file contains demographic information, measures of disease severity and other
 related measures.
+
+### [3. Statical Base Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Statical%20base%20models.ipynb)
+
+In this file statics for each sensor measures (avg, min, max, median, standard deviation, skewness, kvrtosis) were calculated.
+1. Trained a simple SVC, or Support Vector Classifier to classify PD and healthy subjects and got 0.79 test accuracy.
+2. Trained a KNN, when getting a good training accuracy, the model was overfitted.
+
+When training with Neighbors = 15
+
+Accuracy on training set: 0.83 Accuracy on test set: 0.82
+
+Precision: 0.82 Recall: 0.92 F1: 0.87
+3. Trained Random Forest Classifier.
+
+When training with estimators = 200, got tests accuracy = 0.97.
 
 ----
 References:
