@@ -18,11 +18,11 @@ The dataset contains:
 1. Vertical ground reaction force records of subjects as they walked for approximately 2 minutes
 on level ground.
 
-• The file contains the measures from 8 sensors for each foot.
+  • The file contains the measures from 8 sensors for each foot.
 
-• Each individual walks for 2 minutes, records are taken at 100 samples per second.
+  • Each individual walks for 2 minutes, records are taken at 100 samples per second.
 
-Thus, we have 12000 record for each 2 mins walk.
+  Thus, we have 12000 record for each 2 mins walk.
 
 2. Demographics file contains demographic information, measures of disease severity and other
 related measures.
