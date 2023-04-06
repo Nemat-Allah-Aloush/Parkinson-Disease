@@ -4,6 +4,10 @@
 1. [Forward and Backward walking in PD ON_OFF Medication](#1.-forward-and-backward-walking-in-pd-on_off-medication)
 2. [Dataset description](#2.-Dataset-Description)
 3. [Statical Base Models](#3.-Statical-Base-Models)
+4. []()
+5. []()
+6. []()
+7. []()
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -65,9 +69,16 @@ In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/mai
 
 ### [7.Clustering](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Clustering)
 
+Clustering for fait time series dataset did not result in promising results. 
+The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_PD_VGF_Gait_Stances.ipynb) file tried to cluster the data from both lef and right feet. The [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_left_stances.ipynb) file applies the clustering on data from the left foot only. The [third](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_right_stances.ipynb) file applies the clustering on data from the right foot only.
+
 ### [8.Data Class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Reading_Data.ipynb)
+First attempt to write a class for the data.
 
 ### [9.FWHM](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
+
+Data Class + FWHM + SVM.
+
 ----
 References:
 [1] G. Gilmore, A. Gouelle, M. B. Adamson, M. Pieterman, and M. Jog, “Forward and backward walking in Parkinson disease: A factor analysis,” Gait & Posture, vol. 74, pp. 14–19, Oct. 2019, doi: 10.1016/J.GAITPOST.2019.08.005.
