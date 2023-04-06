@@ -39,6 +39,7 @@ When training with Neighbors = 15
 Accuracy on training set: 0.83 Accuracy on test set: 0.82
 
 Precision: 0.82 Recall: 0.92 F1: 0.87
+
 3. Trained Random Forest Classifier.
 
 When training with estimators = 200, got tests accuracy = 0.97.
