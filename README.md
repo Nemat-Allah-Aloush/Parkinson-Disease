@@ -50,7 +50,24 @@ In the [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main
 
 In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Motif%20Search/Motif_Search_with_filtering.ipynb) file, Tried to filter the data, but still having the same problem.
 
+### [5.Transformers](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Transformers.ipynb)
+ 
+ Tried to apply Transformers. From a previous work.
+ 
+### [6.Classification](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Classification.ipynb)
 
+| Task                       | features                               | Accuracy      |
+| -------------              | -------------                          | ------------- |
+| Severity Detection         | Univariate classification (L2 sensor)  | 0.39          |
+| Parkinson’s Classification | Univariate classification (L2 sensor)  | 0.71          |
+| Severity Detection         | Multivariate classification            | 0.38          |
+| Parkinson’s Classification | Multivariate classification            | 0.82          |
+
+### [7.Clustering](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Clustering)
+
+### [8.Data Class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Reading_Data.ipynb)
+
+### [9.FWHM](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
 ----
 References:
 [1] G. Gilmore, A. Gouelle, M. B. Adamson, M. Pieterman, and M. Jog, “Forward and backward walking in Parkinson disease: A factor analysis,” Gait & Posture, vol. 74, pp. 14–19, Oct. 2019, doi: 10.1016/J.GAITPOST.2019.08.005.
