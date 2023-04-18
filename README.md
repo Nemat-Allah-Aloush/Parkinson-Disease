@@ -10,7 +10,7 @@
 7. [Clustering](#7clustering)
 8. [Data Class](#8data-class)
 9. [SVM models on extracted features](#9SVM-models-on-extracted-features)
-10. [Models on sequence data](#10Models-on-sequence-ata)
+10. [Models on sequence data](#10models-on-sequence-data)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
