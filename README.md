@@ -1,9 +1,9 @@
 # Parkinson-Disease
 
 ## Index
-1. [Forward and Backward walking in PD ON_OFF Medication](#1.-forward-and-backward-walking-in-pd-on_off-medication)
-2. [Dataset description](#2.-Dataset-Description)
-3. [Statical Base Models](#3.-Statical-Base-Models)
+1. [Forward and Backward walking in PD ON_OFF Medication](#1-forward-and-backward-walking-in-pd-on_off-medication)
+2. [Dataset description](#2-dataset-description)
+3. [Statical Base Models](#3-Statical-Base-Models)
 4. [Motif Search](#4motif-search)
 5. [Transformers](#5transformers)
 6. [Classification](#6classification)
