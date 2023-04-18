@@ -79,7 +79,7 @@ First attempt to write a class for the data.
 
 ### [9.FWHM](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
 
-Data Class + FWHM + SVM.
+Data Class + Applying FWHM on accumalated forces fro the right foot + applying SVM models on features extracted from the sequences.
 
 ----
 References:
