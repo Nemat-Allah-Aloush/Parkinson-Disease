@@ -1,15 +1,16 @@
 # Parkinson-Disease
 
 ## Index
-1. [Forward and Backward walking in PD ON_OFF Medication](#1.-forward-and-backward-walking-in-pd-on_off-medication)
-2. [Dataset description](#2.-Dataset-Description)
-3. [Statical Base Models](#3.-Statical-Base-Models)
+1. [Forward and Backward walking in PD ON_OFF Medication](#1-forward-and-backward-walking-in-pd-on_off-medication)
+2. [Dataset description](#2-dataset-description)
+3. [Statical Base Models](#3-Statical-Base-Models)
 4. [Motif Search](#4motif-search)
 5. [Transformers](#5transformers)
 6. [Classification](#6classification)
 7. [Clustering](#7clustering)
 8. [Data Class](#8data-class)
 9. [SVM models on extracted features](#9SVM-models-on-extracted-features)
+10. [Models on sequence data](#10models-on-sequence-data)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -80,6 +81,11 @@ First attempt to write a class for the data.
 ### [9.SVM models on extracted features](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/SVM%20models_%20extracted%20features.ipynb)
 
 Data Class + Applying FWHM on accumalated forces fro the right foot + applying SVM models on features extracted from the sequences.
+
+
+### [10.Models on sequence data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Models_Sequences%20data.ipynb)
+
+Data Class + Applying FWHM on accumalated forces fro the right foot + applying models on the sequences.
 
 ----
 References:
