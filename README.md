@@ -9,7 +9,7 @@
 6. [Classification](#6classification)
 7. [Clustering](#7clustering)
 8. [Data Class](#8data-class)
-9. [FWHM](#9fwhm)
+9. [SVM models on extracted features](#9SVM-models-on-extracted-features)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -77,7 +77,7 @@ The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Cl
 ### [8.Data Class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Reading_Data.ipynb)
 First attempt to write a class for the data.
 
-### [9.FWHM](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
+### [9.SVM models on extracted features](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/SVM%20models_%20extracted%20features.ipynb)
 
 Data Class + Applying FWHM on accumalated forces fro the right foot + applying SVM models on features extracted from the sequences.
 
