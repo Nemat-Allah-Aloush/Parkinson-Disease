@@ -94,6 +94,8 @@ Interpretation for the features RF Classifier with 100 estimator on scaled stanc
 
 ### [12.Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
 Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
+
+
 ----
 References:
 [1] G. Gilmore, A. Gouelle, M. B. Adamson, M. Pieterman, and M. Jog, “Forward and backward walking in Parkinson disease: A factor analysis,” Gait & Posture, vol. 74, pp. 14–19, Oct. 2019, doi: 10.1016/J.GAITPOST.2019.08.005.
