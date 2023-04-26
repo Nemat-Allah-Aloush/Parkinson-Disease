@@ -12,6 +12,7 @@
 9. [SVM models on extracted features](#9SVM-models-on-extracted-features)
 10. [Models on sequence data](#10models-on-sequence-data)
 11. [Interpretation](#11interpretation)
+12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -90,6 +91,10 @@ Data Class + Applying FWHM on accumalated forces fro the right foot + applying m
 
 ### [11.Interpretation](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Interpretation.ipynb)
 Interpretation for the features RF Classifier with 100 estimator on scaled stances that resulted with 0.94 accuracy.
+
+### [12.Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
+Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
+
 
 ----
 References:
