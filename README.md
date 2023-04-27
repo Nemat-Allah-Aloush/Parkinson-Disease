@@ -13,7 +13,7 @@
 10. [Models on sequence data](#10models-on-sequence-data)
 11. [Interpretation](#11interpretation)
 12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
-13. [Statical base model on filtered data](#13Statical base model on filtered data)
+13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
