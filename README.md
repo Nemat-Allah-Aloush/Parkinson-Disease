@@ -13,6 +13,7 @@
 10. [Models on sequence data](#10models-on-sequence-data)
 11. [Interpretation](#11interpretation)
 12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
+13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -95,6 +96,9 @@ Interpretation for the features RF Classifier with 100 estimator on scaled stanc
 ### [12.Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
 Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
 
+### [13.Statical base model on filtered data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Revisit_statical_models.ipynb)
+
+Applying random forest classifier on the statics from the raw signal data AFTER being filtered.
 
 ----
 References:
