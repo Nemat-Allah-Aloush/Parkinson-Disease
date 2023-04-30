@@ -14,6 +14,7 @@
 11. [Interpretation](#11interpretation)
 12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
 13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
+14. [DataClass](#14DataClass)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -99,6 +100,11 @@ Applying FWHM scaling and adding other features (stride time, max heel strike, m
 ### [13.Statical base model on filtered data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Revisit_statical_models.ipynb)
 
 Applying random forest classifier on the statics from the raw signal data AFTER being filtered.
+
+### [14.DataClass](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/DataClass)
+
+The dataclass contains read the data, segment it, scale it and iterpolate it.
+
 
 ----
 References:
