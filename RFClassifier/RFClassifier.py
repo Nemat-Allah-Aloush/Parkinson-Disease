@@ -6,21 +6,21 @@ import pickle
 class RFClassifier:
   def __init__(self,models_path,estimators_n,jobs_n,):
     self.models_path = models_path
-    self.rf_classifier = RandomForestClassifier(n_estimators=estimators_n,  n_jobs=jobs_n)
+    self.rf_classifier = RandomForestClassifier(n_estimators=estimators_n,  n_jobs=jobs_n,random_state=42)
 
   def multiple_training(self,estimators_n,jobs_n, x_train, y_train, x_test, y_test):
     test_score_RFC=[]
     RFCs=[]
     for n in estimators_n:
-        clf = RandomForestClassifier(n_estimators= int(n), n_jobs= jobs_n)
+        clf = RandomForestClassifier(n_estimators= int(n), n_jobs= jobs_n,random_state=42)
         clf.fit(x_train, np.ravel(y_train))
         y_pred = clf.predict(x_test)
-        scores = self.scores(np.ravel(y_pred), np.ravel(y_test))
+        scores = self.scores(np.ravel(y_test),np.ravel(y_pred))
         test_score_RFC.append(scores)  
         RFCs.append(clf)
     for neighbor, tr_sc in zip((estimators_n),test_score_RFC): 
         print(f"Estimator = {neighbor}")
-        print('Accuracy: {:.4f}, Precision: {:.4f}, Recall: {:.4f}, F1: {:.4f}'.format(tr_sc[0],tr_sc[1],tr_sc[2],tr_sc[3]))
+        print('Accuracy: {:.4f}, Precision: {:.4f}, Recall: {:.4f}, F1: {:.4f}'.format(tr_sc[0], tr_sc[1] ,tr_sc[2], tr_sc[3]))
     return RFCs
 
   def tain(self, x_train, y_train):
@@ -51,7 +51,10 @@ class RFClassifier:
         pickle.dump(self.rf_classifier, f)
 
   def load_model(self,file_name):
-    # Load the model                                                                                                                                                                                                       
-    with open(self.models_path+file_name) as f:
-        self.rf_classifier = pickle.load(f)
+    # Load the model                       
+    f = open(self.models_path+file_name, 'rb')
+    self.rf_classifier = pickle.load(f)   
+
+    #with open(self.models_path+file_name) as f:
+     #   self.rf_classifier = pickle.load(f)
     return self.rf_classifier
