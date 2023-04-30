@@ -118,7 +118,7 @@ In this code file, we use [class data]() and [RFC class]() to apply the previous
 
 | Model                      | Input data                                                    | Accuracy      | Precision      | Recall      | F1      |
 | -------------              | -------------                                                 | ------------ | ------------ | ------------ | ------------ |
-| RFC n_est=100, Rand=42     | Statics on filtered data from each sensor  | 0.921  |0.9167 |0.9821          |0.9483          |
+| RFC n_est=100, Rand=42     | Statics on filtered raw data from each sensor  | 0.921  |0.9167 |0.9821          |0.9483          |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
