@@ -15,6 +15,7 @@
 12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
 13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
 14. [DataClass](#14DataClass)
+15. [RFClassifier](#15RFClassifier)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -105,7 +106,9 @@ Applying random forest classifier on the statics from the raw signal data AFTER 
 
 The dataclass contains read the data, segment it, scale it and iterpolate it.
 
+### [15.RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier)
 
+Class for training, predicting, scoring the results with Random Forest Classifier.
 ----
 References:
 [1] G. Gilmore, A. Gouelle, M. B. Adamson, M. Pieterman, and M. Jog, “Forward and backward walking in Parkinson disease: A factor analysis,” Gait & Posture, vol. 74, pp. 14–19, Oct. 2019, doi: 10.1016/J.GAITPOST.2019.08.005.
