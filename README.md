@@ -3,19 +3,20 @@
 ## Index
 1. [Forward and Backward walking in PD ON_OFF Medication](#1-forward-and-backward-walking-in-pd-on_off-medication)
 2. [Dataset description](#2-dataset-description)
-3. [Statical Base Models](#3-Statical-Base-Models)
+3. [Statical Base Models](#3-statical-base-models)
 4. [Motif Search](#4motif-search)
 5. [Transformers](#5transformers)
 6. [Classification](#6classification)
 7. [Clustering](#7clustering)
 8. [Data Class](#8data-class)
-9. [SVM models on extracted features](#9SVM-models-on-extracted-features)
+9. [SVM models on extracted features](#9svm-models-on-extracted-features)
 10. [Models on sequence data](#10models-on-sequence-data)
 11. [Interpretation](#11interpretation)
 12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
 13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
-14. [DataClass](#14DataClass)
-15. [RFClassifier](#15RFClassifier)
+14. [DataClass](#14dataclass)
+15. [RFClassifier](#15rfclassifier)
+16. [Summing up](#16summing-up)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -109,6 +110,17 @@ The dataclass contains read the data, segment it, scale it and iterpolate it.
 ### [15.RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier)
 
 Class for training, predicting, scoring the results with Random Forest Classifier.
+
+### [16.Summing Up](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
+In this code file, we use [class data]() and [RFC class]() to apply the previous different models on the data.
+1. RFC basemodel using statics from raw data.
+2. RFC models on interpolated scaled stances with FWHM algorithm, and additional features
+
+| Model                      | Input data                                                    | Accuracy      | Precision      | Recall      | F1      |
+| -------------              | -------------                                                 | ------------ | ------------ | ------------ | ------------ |
+| RFC n_est=100, Rand=42     | Statics on filtered data from each sensor  | 0.921  |0.9167 |0.9821          |0.9483          |
+| RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
+| RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
 
 ----
