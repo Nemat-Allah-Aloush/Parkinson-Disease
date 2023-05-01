@@ -17,6 +17,7 @@
 14. [DataClass](#14dataclass)
 15. [RFClassifier](#15rfclassifier)
 16. [RFC models](#16rfc-models)
+17. [Trying Hybrid models](#17trying-hybrid-model)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -128,6 +129,9 @@ In this code file, we use [class data]() and [RFC class]() to apply the previous
 | RFC n_est=100, Rand=42     | Statics on filtered raw data from each sensor  | 0.921  |0.9167 |0.9821          |0.9483          |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
+
+### [Trying Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
+trying different hybrid models.
 
 
 ----
