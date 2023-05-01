@@ -115,6 +115,7 @@ Class for training, predicting, scoring the results with Random Forest Classifie
 
 ### [16.RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
 In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/DataClass) and [RFC class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) to apply the previous different models on the data.
+(SUMMING UP)
 1. RFC basemodel using statics from raw data.
 2. RFC models on interpolated scaled stances with FWHM algorithm, and additional features
 3. RFC on scaled stances with 3 extra features and statics
