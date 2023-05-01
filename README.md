@@ -113,7 +113,7 @@ The dataclass contains read the data, segment it, scale it and iterpolate it.
 Class for training, predicting, scoring the results with Random Forest Classifier.
 
 ### [16.RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
-In this code file, we use [class data]() and [RFC class]() to apply the previous different models on the data.
+In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/DataClass) and [RFC class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) to apply the previous different models on the data.
 1. RFC basemodel using statics from raw data.
 2. RFC models on interpolated scaled stances with FWHM algorithm, and additional features
 3. RFC on scaled stances with 3 extra features and statics
@@ -130,7 +130,7 @@ In this code file, we use [class data]() and [RFC class]() to apply the previous
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
-### [Trying Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
+### [17.Trying Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
 trying different hybrid models.
 
 
