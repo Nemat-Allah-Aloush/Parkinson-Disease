@@ -16,7 +16,7 @@
 13. [Statical base model on filtered data](#13statical-base-model-on-filtered-data)
 14. [DataClass](#14dataclass)
 15. [RFClassifier](#15rfclassifier)
-16. [Summing up](#16summing-up)
+16. [RFC models](#16rfc-models)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -111,10 +111,17 @@ The dataclass contains read the data, segment it, scale it and iterpolate it.
 
 Class for training, predicting, scoring the results with Random Forest Classifier.
 
-### [16.Summing Up](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/main.ipynb)
+### [16.RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
 In this code file, we use [class data]() and [RFC class]() to apply the previous different models on the data.
 1. RFC basemodel using statics from raw data.
 2. RFC models on interpolated scaled stances with FWHM algorithm, and additional features
+3. RFC on scaled stances with 3 extra features and statics
+4. RFC on scaled stances with 6 extra features and statics
+5. RFC model on scaled stances from the right & left foot with 6 extra features each
+6. RFC model on scaled stances from the right & left foot with 6 extra features each and basemodels
+7. RFC model on scaled stances from 16 sensor from the right & left foot with 6 extra features each
+8. RFC model on scaled stances from 16 sensor from the right & left foot with the sum of all sensors and with 6 extra features each
+9. RFC model on scaled stances from 16 sensor from the right & left foot and the sum of all sensors and with 6 extra features each foot and the statics from base models
 
 | Model                      | Input data                                                    | Accuracy      | Precision      | Recall      | F1      |
 | -------------              | -------------                                                 | ------------ | ------------ | ------------ | ------------ |
