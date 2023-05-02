@@ -67,6 +67,7 @@ class Data:
     self.scaled_stances_statics_df=pd.read_parquet(self.parquet_path+'scaled_stances_statics.gzip')
 
   def prepare_data(self):
+    self.scaled_stances_all_sensors_df=pd.read_parquet(parquet_path+'scaled_all_sensors_stances.gzip')
     # loop over files, each file is a 2 min walk for a single individual
     # files are expected to be in csv format
     self.dem_df = pd.read_csv(self.dem_path)
@@ -102,7 +103,7 @@ class Data:
 
       # Raw statics
       raw_statics_1 = self.get_statics_raw_siganls(one_walk)
-
+      
       ## Left foot related ##
       l_stances, l_strides_time , l_swings_time, l_stances_time, l_indices = self.segment_signal(one_walk_lists[16])
       # stances from all sensors underneath left foot
@@ -141,10 +142,10 @@ class Data:
       ## Saving data ##
       # Raw Signals
       self.signals_data.append([id,level,parkinson] +one_walk_lists)
-
+      
       # Raw Statics
       self.raw_statics.append([id,level,parkinson] +raw_statics_1)
-
+      
       # Statical
       self.statical_data.append( [ id, level, parkinson 
                                 , mean (l_swings_time) , np.std(l_swings_time), (mean (l_swings_time) / np.std(l_swings_time) *100)
@@ -179,6 +180,7 @@ class Data:
 
     # Save to df
     self.raw_statics_data_to_df()
+    
     self.statical_data_to_df()
     self.cycles_data_to_df()
     self.signal_data_to_df()
@@ -366,7 +368,7 @@ class Data:
     
   def raw_statics_data_to_df(self):
     colnames=["ID", "level", "y"]
-    for col in ["Time"	,"L1",	"L2",	"L3"	,"L4"	"L5",	"L6",	"L7"	,"L8",	"R1",	"R2"	,"R3",	"R4",	"R5",	"R6",	"R7",	"R8",	"Total_Force_Left",	"Total_Force_Right"]:
+    for col in ["L1",	"L2",	"L3"	,"L4",	"L5",	"L6",	"L7"	,"L8",	"R1",	"R2"	,"R3",	"R4",	"R5",	"R6",	"R7",	"R8",	"Total_Force_Left",	"Total_Force_Right"]:
         for x in ["Min", "Max", "Std", "Med", "Avg", "Skewness", "Kurtosis"]:
             colnames.append( col +'_' +  x)
     self.raw_statics_df = pd.DataFrame(self.raw_statics, columns =colnames)
@@ -488,8 +490,7 @@ class Data:
     return result
 
   def get_scaled_stances_statics_df (self):
-    df = self.raw_statics_df.drop(['level', 'y', 'Time_Min', 'Time_Max', 'Time_Std', 'Time_Med',
-        'Time_Avg', 'Time_Skewness', 'Time_Kurtosis'], axis=1)
+    df = self.raw_statics_df.drop(['level', 'y'], axis=1)
     df_raw_statics = df.groupby('ID').mean().reset_index()
     cols=['fwhm_value', 'scaled_x', 'scaled_y', 'new_x', 'new_y', 'L1_stances', 'L2_stances', 'L3_stances', 'L4_stances',
         'L5_stances', 'L6_stances', 'L7_stances', 'L8_stances', 'R1_stances',
@@ -512,12 +513,14 @@ class Data:
     self.scaled_stances_statics_df = pd.merge(df_scaled,df_raw_statics,on=['ID'], how='outer')
       
   def save_files(self):
+    
     self.signals_data_df.to_parquet(self.parquet_path+'signals.gzip')
     self.cycles_data_df.to_parquet(self.parquet_path+'cyclels.gzip')
     self.statical_data_df.to_parquet(self.parquet_path+'statical.gzip')
     self.left_stances_df.to_parquet(self.parquet_path+'left_stances.gzip')
     self.right_stances_df.to_parquet(self.parquet_path+'right_stances.gzip')
     self.raw_statics_df.to_parquet(self.parquet_path+'raw_statics.gzip')
+    
     self.stances_all_sensors_df.to_parquet(self.parquet_path+'stances_all_sensors.gzip')
     self.scaled_right_stances.to_parquet(self.parquet_path+'scaled_right_stances.gzip')
     self.scaled_left_stances.to_parquet(self.parquet_path+'scaled_left_stances.gzip')
