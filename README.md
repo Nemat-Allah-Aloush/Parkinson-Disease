@@ -132,8 +132,12 @@ In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Par
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
-### [17.Trying Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
-trying different hybrid models.
+### 17.Trying Hybrid models
+1.[Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
+trying different hybrid models for right stances and 3 features.
+
+2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
+Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
 
 
 ----
