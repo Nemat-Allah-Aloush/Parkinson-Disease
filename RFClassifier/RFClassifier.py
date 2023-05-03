@@ -4,10 +4,10 @@ from sklearn.metrics import accuracy_score,precision_score, recall_score, f1_sco
 import pickle
 
 class RFClassifier:
-  def __init__(self,models_path,estimators_n,jobs_n,):
+  def __init__(self,models_path,estimators_n,jobs_n,average='binary'):
     self.models_path = models_path
     self.rf_classifier = RandomForestClassifier(n_estimators=estimators_n,  n_jobs=jobs_n,random_state=42)
-
+    self.average=average
   def multiple_training(self,estimators_n,jobs_n, x_train, y_train, x_test, y_test):
     test_score_RFC=[]
     RFCs=[]
@@ -33,9 +33,9 @@ class RFClassifier:
     return y_pred
 
   def scores(self, y_test, y_pred):     
-    prec = precision_score(y_test, y_pred)
-    rec = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
+    prec = precision_score(y_test, y_pred,average=self.average)
+    rec = recall_score(y_test, y_pred,average=self.average)
+    f1 = f1_score(y_test, y_pred,average=self.average)
     accuracy = accuracy_score(y_test, y_pred)
     return [accuracy,prec,rec,f1]
 
