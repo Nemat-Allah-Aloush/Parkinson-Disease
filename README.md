@@ -18,7 +18,7 @@
 15. [RFClassifier](#15rfclassifier)
 16. [RFC models](#16rfc-models)
 17. [Trying Hybrid models](#17trying-hybrid-models)
-18. 
+18. [Explinable Models](#18explinable-models)
 ----
 
 ### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
@@ -138,6 +138,9 @@ trying different hybrid models for right stances and 3 features.
 
 2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
 Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
+
+### [18.Explinable Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explinability.ipynb)
+Finding what features are more important on models trained on statics and extracted features
 
 
 ----
