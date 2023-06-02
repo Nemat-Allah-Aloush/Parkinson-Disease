@@ -14,9 +14,7 @@
 
 4.4. [Models on sequence data](#4.4-models-on-sequence-data)
 
-4.5. [Applying FWHM scaling and adding other features for RFC](#4.5-applying-fwhm-scaling-and-adding-other-features-for-rfc)
-
-4.6. [RFClassifier](#4.6-fclassifier)
+4.5. [RFClassifier](#4.5-fclassifier)
 
 5. [Explinable Models](#18explinable-models)
 
@@ -75,10 +73,7 @@ The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Cl
 
 Data Class + Applying FWHM on accumalated forces fro the right foot + applying models on the sequences.
 
-#### [4.5 Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
-Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
-
-#### 4.6 RFClassifier
+#### 4.5 RFClassifier
 
 - [RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) Class for training, predicting, scoring the results with Random Forest Classifier.
 - [RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
