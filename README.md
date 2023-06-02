@@ -4,16 +4,15 @@
 1. [Dataset description](#1-dataset-description)
 2. [DataClass](#2-dataclass)
 3. [Baseline models](#3-baseline-models)
-4. [Motif Search](#4motif-search)
-6. [Classification](#6classification)
-7. [Clustering](#7clustering)
-9. [SVM models on extracted features](#9svm-models-on-extracted-features)
-10. [Models on sequence data](#10models-on-sequence-data)
-12. [Applying FWHM scaling and adding other features for RFC](#12applying-fwhm-scaling-and-adding-other-features-for-rfc)
-15. [RFClassifier](#15rfclassifier)
-16. [RFC models](#16rfc-models)
-18. [Explinable Models](#18explinable-models)
-19. [The Hybrid models](#19the-hybrid-models)
+4. [Initial Models]()
+4.1. [Motif Search](#4.1-motif-search)
+4.2. [Classification](#4.2-classification)
+4.3. [Clustering](#4.3-clustering)
+4.4. [Models on sequence data](#4.4-models-on-sequence-data)
+4.5. [Applying FWHM scaling and adding other features for RFC](#4.5-applying-fwhm-scaling-and-adding-other-features-for-rfc)
+4.6. [RFClassifier](#4.6-fclassifier)
+5. [Explinable Models](#18explinable-models)
+6. [The Hybrid models](#19the-hybrid-models)
 ----
 
 ### 1. Dataset Description
@@ -70,7 +69,7 @@ Data Class + Applying FWHM on accumalated forces fro the right foot + applying m
 #### [4.5 Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
 Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
 
-#### [4.6 RFClassifier]
+#### 4.6 RFClassifier
 
 -[RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) Class for training, predicting, scoring the results with Random Forest Classifier.
 - [RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
@@ -101,7 +100,7 @@ trying different hybrid models for right stances and 3 features.
 Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
 Two final notebooks for training hybrid model on all data with/without statics for binary classification and severity Detection. 
 
-### [18.Explinable Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Explaining)
+### [6.Explinable Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Explaining)
 [First file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability.ipynb): Finding what features are more important on models trained on statics and extracted features
 
 [Second file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability_Continue.ipynb): Showing the most important features in different plots.
