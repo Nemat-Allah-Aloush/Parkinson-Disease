@@ -63,6 +63,10 @@ In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/mai
 Clustering for fait time series dataset did not result in promising results. 
 The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_PD_VGF_Gait_Stances.ipynb) file tried to cluster the data from both lef and right feet. The [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_left_stances.ipynb) file applies the clustering on data from the left foot only. The [third](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_right_stances.ipynb) file applies the clustering on data from the right foot only.
 
+[10.Models on sequence data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Models_Sequences_data.ipynb)
+
+Data Class + Applying FWHM on accumalated forces fro the right foot + applying models on the sequences.
+
 #### [12.Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
 Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
 
