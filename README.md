@@ -1,7 +1,6 @@
 # Parkinson-Disease
 
 ## Index
-1. [Forward and Backward walking in PD ON_OFF Medication](#1-forward-and-backward-walking-in-pd-on_off-medication)
 2. [Dataset description](#2-dataset-description)
 4. [Motif Search](#4motif-search)
 6. [Classification](#6classification)
@@ -14,15 +13,9 @@
 14. [DataClass](#14dataclass)
 15. [RFClassifier](#15rfclassifier)
 16. [RFC models](#16rfc-models)
-17. [Trying Hybrid models](#17trying-hybrid-models)
 18. [Explinable Models](#18explinable-models)
 19. [The Hybrid models](#19the-hybrid-models)
 ----
-
-### [1. Forward and Backward walking in PD ON_OFF Medication](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Forward%20and%20Backward%20walking%20in%20PD%20ON_OFF%20Medication)  
-Data analysis for gait dataset[1] collected from Parkinspn's dissease patients.
-
-The dataset can be found by following the link, [here](https://data.mendeley.com/datasets/7t658vpdhj/1/files/27c3a522-8baa-4ffd-8547-5f3b4ca240f6).
 
 ### 2. Dataset Description
 
@@ -41,21 +34,7 @@ on level ground.
 2. Demographics file contains demographic information, measures of disease severity and other
 related measures.
 
-### [3. Statical Base Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Statical%20base%20models.ipynb)
 
-In this file statics for each sensor measures (avg, min, max, median, standard deviation, skewness, kvrtosis) were calculated.
-1. Trained a simple SVC, or Support Vector Classifier to classify PD and healthy subjects and got 0.79 test accuracy.
-2. Trained a KNN, when getting a good training accuracy, the model was overfitted.
-
-When training with Neighbors = 15
-
-Accuracy on training set: 0.83 Accuracy on test set: 0.82
-
-Precision: 0.82 Recall: 0.92 F1: 0.87
-
-3. Trained Random Forest Classifier.
-
-When training with estimators = 200, got tests accuracy = 0.97.
 
 ### [4.Motif Search](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Motif%20Search)
 
@@ -63,9 +42,7 @@ In the [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main
 
 In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Motif%20Search/Motif_Search_with_filtering.ipynb) file, Tried to filter the data, but still having the same problem.
 
-### [5.Transformers](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Transformers.ipynb)
- 
- Tried to apply Transformers. From a previous work.
+
  
 ### [6.Classification](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Classification.ipynb)
 
@@ -81,8 +58,7 @@ In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/mai
 Clustering for fait time series dataset did not result in promising results. 
 The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_PD_VGF_Gait_Stances.ipynb) file tried to cluster the data from both lef and right feet. The [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_left_stances.ipynb) file applies the clustering on data from the left foot only. The [third](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_right_stances.ipynb) file applies the clustering on data from the right foot only.
 
-### [8.Data Class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Reading_Data.ipynb)
-First attempt to write a class for the data.
+
 
 ### [9.SVM models on extracted features](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/SVM%20models_%20extracted%20features.ipynb)
 
@@ -130,12 +106,6 @@ In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Par
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
-### 17.Trying Hybrid models
-1.[Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
-trying different hybrid models for right stances and 3 features.
-
-2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
-Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
 
 ### [18.Explinable Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Explaining)
 [First file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability.ipynb): Finding what features are more important on models trained on statics and extracted features
@@ -143,6 +113,12 @@ Hybrid model class and a train it on for right stances and 3 features and on for
 [Second file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability_Continue.ipynb): Showing the most important features in different plots.
 
 ### [19.The Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Hybrid_Models)
+1.[Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
+trying different hybrid models for right stances and 3 features.
+
+2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
+Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
+
 Two final notebooks for training hybrid model on all data with/without statics for binary classification and severity Detection. 
 
 ----
