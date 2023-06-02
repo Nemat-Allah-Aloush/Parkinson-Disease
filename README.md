@@ -5,11 +5,17 @@
 2. [DataClass](#2-dataclass)
 3. [Baseline models](#3-baseline-models)
 4. [Initial Models]()
+
 4.1. [Motif Search](#4.1-motif-search)
+
 4.2. [Classification](#4.2-classification)
+
 4.3. [Clustering](#4.3-clustering)
+
 4.4. [Models on sequence data](#4.4-models-on-sequence-data)
+
 4.5. [Applying FWHM scaling and adding other features for RFC](#4.5-applying-fwhm-scaling-and-adding-other-features-for-rfc)
+
 4.6. [RFClassifier](#4.6-fclassifier)
 5. [Explinable Models](#18explinable-models)
 6. [The Hybrid models](#19the-hybrid-models)
