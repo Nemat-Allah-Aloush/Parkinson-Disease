@@ -16,9 +16,9 @@
 
 4.5. [RFClassifier](#4.5-fclassifier)
 
-5. [Explinable Models](#18explinable-models)
+5. [The Hybrid models](#5.-the-hybrid-models)
 
-6. [The Hybrid models](#19the-hybrid-models)
+6. [Explinable Models](#6.-explinable-models)
 
 ----
 
