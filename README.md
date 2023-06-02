@@ -3,12 +3,9 @@
 ## Index
 1. [Forward and Backward walking in PD ON_OFF Medication](#1-forward-and-backward-walking-in-pd-on_off-medication)
 2. [Dataset description](#2-dataset-description)
-3. [Statical Base Models](#3-statical-base-models)
 4. [Motif Search](#4motif-search)
-5. [Transformers](#5transformers)
 6. [Classification](#6classification)
 7. [Clustering](#7clustering)
-8. [Data Class](#8data-class)
 9. [SVM models on extracted features](#9svm-models-on-extracted-features)
 10. [Models on sequence data](#10models-on-sequence-data)
 11. [Interpretation](#11interpretation)
