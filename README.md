@@ -17,7 +17,9 @@
 4.5. [Applying FWHM scaling and adding other features for RFC](#4.5-applying-fwhm-scaling-and-adding-other-features-for-rfc)
 
 4.6. [RFClassifier](#4.6-fclassifier)
+
 5. [Explinable Models](#18explinable-models)
+
 6. [The Hybrid models](#19the-hybrid-models)
 
 ----
