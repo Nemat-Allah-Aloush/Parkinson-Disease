@@ -80,7 +80,7 @@ Applying FWHM scaling and adding other features (stride time, max heel strike, m
 
 #### 4.6 RFClassifier
 
--[RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) Class for training, predicting, scoring the results with Random Forest Classifier.
+- [RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) Class for training, predicting, scoring the results with Random Forest Classifier.
 - [RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
 In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/DataClass) and [RFC class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) to apply the previous different models on the data.
 (SUMMING UP)
@@ -96,16 +96,16 @@ In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Par
 
 | Model                      | Input data                                                    | Accuracy      | Precision      | Recall      | F1      |
 | -------------              | -------------                                                 | ------------ | ------------ | ------------ | ------------ |
-| RFC n_est=100, Rand=42     | Statics on filtered raw data from each sensor  | 0.921  |0.9167 |0.9821          |0.9483          |
-| RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.9418 |0.9370  |0.9803 |0.9581 |
-| RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
+| RFC n_est=200     | Statics on filtered raw data from each sensor  | 0.8329  |0.8716 |0.9084          |0.8844          |
+| RFC n_est=200     | Right foot related: [ Interpolated Scaled stances, 3 features]  | 0.7092 |0.7708  |0.8176 |0.7897 |
+| RFC n_est=200     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.7341| 0.7896 |0.8370|0.8815|
 
 
 ### [5. Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Hybrid_Models)
-1.[Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
+- [Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
 trying different hybrid models for right stances and 3 features.
 
-2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
+- [Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
 Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
 Two final notebooks for training hybrid model on all data with/without statics for binary classification and severity Detection. 
 
