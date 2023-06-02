@@ -3,7 +3,7 @@
 ## Index
 1. [Dataset description](#1-dataset-description)
 2. [DataClass](#2-dataclass)
-3. [Baseline models](#3-statical-base-model-on-filtered-data)
+3. [Baseline models](#3-baseline-models)
 4. [Motif Search](#4motif-search)
 6. [Classification](#6classification)
 7. [Clustering](#7clustering)
@@ -37,7 +37,7 @@ related measures.
 
 The dataclass contains read the data, segment it, scale it and iterpolate it.
 
-### [3. Baseline models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Revisit_statical_models.ipynb)
+### [3. Baseline models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Baseline_models.ipynb)
 
 Applying random forest classifier on the statics from the raw signal data AFTER being filtered.
 
