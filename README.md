@@ -43,13 +43,13 @@ Applying random forest classifier on the statics from the raw signal data AFTER 
 
 ### 4. Initial Models
 
-#### [5.Motif Search](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Motif%20Search)
+#### [4.1 Motif Search](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Motif%20Search)
 
 In the [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Motif%20Search/Motif_Search.ipynb) file, tried to apply motif identification on different features from the time series dataset, it appeared that the shape of the dataset (pressure - no pressure) is what resulted as motif and that is not useful.
 
 In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Motif%20Search/Motif_Search_with_filtering.ipynb) file, Tried to filter the data, but still having the same problem.
 
-#### [6.Classification](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Classification.ipynb)
+#### [4.2 Classification](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Classification.ipynb)
 
 | Task                       | features                               | Accuracy      |
 | -------------              | -------------                          | ------------- |
@@ -58,23 +58,22 @@ In the [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/mai
 | Severity Detection         | Multivariate classification            | 0.38          |
 | Parkinson’s Classification | Multivariate classification            | 0.82          |
 
-#### [7.Clustering](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Clustering)
+#### [4.3 Clustering](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Clustering)
 
 Clustering for fait time series dataset did not result in promising results. 
 The [first](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_PD_VGF_Gait_Stances.ipynb) file tried to cluster the data from both lef and right feet. The [second](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_left_stances.ipynb) file applies the clustering on data from the left foot only. The [third](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Clustering/Clustering_right_stances.ipynb) file applies the clustering on data from the right foot only.
 
-[10.Models on sequence data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Models_Sequences_data.ipynb)
+#### [4.4 Models on sequence data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Models_Sequences_data.ipynb)
 
 Data Class + Applying FWHM on accumalated forces fro the right foot + applying models on the sequences.
 
-#### [12.Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
+#### [4.5 Applying FWHM scaling and adding other features for RFC](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/fwhm_scaling_RFC.ipynb)
 Applying FWHM scaling and adding other features (stride time, max heel strike, max toe strike) for RFCs
 
-#### [15.RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier)
+#### [4.6 RFClassifier]
 
-Class for training, predicting, scoring the results with Random Forest Classifier.
-
-#### [16.RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
+-[RFClassifier](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) Class for training, predicting, scoring the results with Random Forest Classifier.
+- [RFC models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/RFCmodels.ipynb)
 In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/DataClass) and [RFC class](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/RFClassifier) to apply the previous different models on the data.
 (SUMMING UP)
 1. RFC basemodel using statics from raw data.
@@ -94,19 +93,20 @@ In this code file, we use [class data](https://github.com/Nemat-Allah-Aloush/Par
 | RFC n_est=100, Rand=42     | Right foot related: [ Interpolated Scaled stances, 6 features]| 0.9537|0.9461 |0.9880|0.9666|
 
 
-### [19.The Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Hybrid_Models)
+### [5. Hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Hybrid_Models)
 1.[Trying hybrid models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodel.ipynb)
 trying different hybrid models for right stances and 3 features.
 
 2.[Hybrid model](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Hybridmodels.ipynb)
 Hybrid model class and a train it on for right stances and 3 features and on for right stances and 6 features.
-
 Two final notebooks for training hybrid model on all data with/without statics for binary classification and severity Detection. 
 
 ### [18.Explinable Models](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/tree/main/Explaining)
 [First file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability.ipynb): Finding what features are more important on models trained on statics and extracted features
 
 [Second file](https://github.com/Nemat-Allah-Aloush/Parkinson-Disease/blob/main/Explaining/Explinability_Continue.ipynb): Showing the most important features in different plots.
+
+
 ----
 References:
 [1] G. Gilmore, A. Gouelle, M. B. Adamson, M. Pieterman, and M. Jog, “Forward and backward walking in Parkinson disease: A factor analysis,” Gait & Posture, vol. 74, pp. 14–19, Oct. 2019, doi: 10.1016/J.GAITPOST.2019.08.005.
